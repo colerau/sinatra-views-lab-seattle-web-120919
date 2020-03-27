@@ -1,0 +1,12 @@
+<% require 'date' %>
+<% require 'time' %>
+
+<% t = Time.now %>
+<% year = t.year %>
+<% month = Date::MONTHNAMES[Date.today.month] %>
+<% day_of_week = Time.now %>
+<% day = t.day %>
+
+<h1> Today </h1>
+
+<p> <%= "The date is #{day_of_week.strftime("%A")}, #{month.to_s} #{day}, #{year}." %> </p>
